@@ -59,3 +59,45 @@
     scroll-behavior: auto !important;
   }
 }
+
+@page {
+  size: A4 portrait;
+  margin: 16mm;
+}
+
+@media print {
+  html,
+  body,
+  #root {
+    height: auto;
+    background: white !important;
+  }
+
+  .print-hidden {
+    display: none !important;
+  }
+
+  .report-print-area {
+    display: block !important;
+    width: 100% !important;
+    min-height: auto !important;
+    overflow: visible !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .report-print-area h1,
+  .report-print-area h2,
+  .report-print-area h3 {
+    break-after: avoid-page;
+  }
+
+  .report-print-area p,
+  .report-print-area li,
+  .report-print-area blockquote {
+    orphans: 3;
+    widows: 3;
+  }
+}

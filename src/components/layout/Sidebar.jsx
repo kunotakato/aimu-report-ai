@@ -1,8 +1,10 @@
-import { History, NotebookPen, Plus, Settings, Sparkles } from 'lucide-react'
+import { Activity, History, LayoutDashboard, MessageSquareText, Plus, Settings, Sparkles } from 'lucide-react'
 
 const NAV_ITEMS = [
-  { id: 'chat', label: '日報作成', icon: NotebookPen },
-  { id: 'history', label: '履歴', icon: History },
+  { id: 'dashboard', label: 'ダッシュボード', icon: LayoutDashboard },
+  { id: 'activity', label: '今日の活動記録', icon: Activity },
+  { id: 'chat', label: 'AI日報作成', icon: MessageSquareText },
+  { id: 'history', label: '日報履歴', icon: History },
   { id: 'settings', label: '設定', icon: Settings },
 ]
 

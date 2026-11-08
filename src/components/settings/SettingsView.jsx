@@ -1,4 +1,4 @@
-import { Settings } from 'lucide-react'
+import { HardDrive, Settings } from 'lucide-react'
 
 export default function SettingsView() {
   return (
@@ -12,6 +12,15 @@ export default function SettingsView() {
             <h2 className="text-lg font-bold text-navy-900">設定</h2>
             <p className="text-sm leading-normal text-slate-600">
               アカウント情報や日報の出力形式などの設定は、今後のアップデートで追加される予定です。
+            </p>
+          </div>
+        </div>
+        <div className="mt-4 flex items-start gap-4 rounded-2xl border border-amber-200 bg-amber-50 p-6">
+          <HardDrive size={22} className="mt-0.5 shrink-0 text-amber-700" />
+          <div>
+            <h2 className="font-bold text-amber-950">ブラウザ保存について</h2>
+            <p className="mt-2 text-sm leading-relaxed text-amber-900">
+              活動メモと日報は、この端末のブラウザ内にだけ保存されます。端末間では同期されず、ブラウザデータを削除すると失われる可能性があります。Dify APIキーなどの秘密情報は保存しません。
             </p>
           </div>
         </div>
